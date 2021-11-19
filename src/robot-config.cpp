@@ -20,10 +20,10 @@ motor FrontLeftMotor = motor(PORT7, ratio18_1, false);
 motor BackLeftMotor= motor(PORT10, ratio18_1, true);
 motor TopLeft = motor(PORT8, ratio18_1, false);
 
-motor ForkLeft = motor(PORT1, ratio18_1, true);
+motor ForkLeft = motor(PORT1, ratio18_1, true); //One of these isn't needed
 motor ForkRight = motor(PORT13, ratio18_1, false);
 
-motor Forklift = motor(PORT20, ratio18_1, true);
+motor Forklift = motor(PORT20, ratio18_1, true); //Back lift
 
 motor_group Drivetrain = motor_group(FrontRightMotor, FrontLeftMotor, BackLeftMotor, BackRightMotor, TopLeft, TopRight);
 motor_group Right = motor_group(FrontRightMotor, BackRightMotor);
